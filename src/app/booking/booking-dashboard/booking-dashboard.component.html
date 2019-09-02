@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <!-- Mobile-view -->
+  <div class=" ">
+    <div class="col-sm-12 p-0">
+      <nav class="navbar navbar-expand-md navbar-fixed navbar-dark " style="background-color:rgb(5, 5, 128);">
+        <a class="navbar-brand" style="font-size:1.5em; color: white" [routerLink]="['/booking-dashboard']">INSTACAR
+        </a>
+      </nav>
+      <div class='row '>
+        <div class='col-12'>
+          <mat-tab-group mat-align-tabs="center" animationDuration="1000ms" >
+            <mat-tab label="ROUND TRIP" > 
+               <div class="col-12 d-flex justify-content-center">
+                <mat-form-field appearance="outline" class="mr-2 ml-2 ">
+                  <mat-label style="color:blue">FROM</mat-label>
+                  <input matInput placeholder="Select Origin">
+                  <mat-select required>
+                    <mat-option>Select City</mat-option>
+                    <mat-option value="option">Bengaluru</mat-option>
+                    <!-- <mat-option value="option">Hyderabad</mat-option>
+                    <mat-option value="option">Mumbai</mat-option>
+                    <mat-option value="option">Kerala</mat-option> -->
+                  </mat-select>
+                </mat-form-field>
+              
+              
+                <mat-form-field appearance="outline" class="mr-2 ml-2">
+                  <mat-label style="color:blue">To</mat-label>
+                  <input matInput placeholder="Select Destination">
+                  <mat-select required>
+                    <mat-option>Select City</mat-option>
+                    <!-- <mat-option value="option">Bengaluru</mat-option> -->
+                    <mat-option value="option">Hyderabad</mat-option>
+                    <mat-option value="option">Mumbai</mat-option>
+                    <mat-option value="option">Kerala</mat-option>
+                  </mat-select>
+                </mat-form-field>
+
+                
+              
+              </div>
+
+              <div class="col-12 d-flex justify-content-center">
+                <mat-form-field appearance="outline" class="mr-2 ml-2 ">
+                  <mat-label style="color:blue">Departure Date</mat-label>
+                  <input matInput placeholder="Departure Date" type="date">
+                  
+                </mat-form-field>
+              
+              
+                <mat-form-field appearance="outline" class="mr-2 ml-2">
+                  <mat-label style="color:blue">Arrival Date</mat-label>
+                  <input matInput placeholder="Arrival Date" type="date">
+                 
+                </mat-form-field>
+
+                
+              
+              </div>
+            </mat-tab>
+            <mat-tab label="MULTICITY"> Content 2 </mat-tab>
+          </mat-tab-group>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
