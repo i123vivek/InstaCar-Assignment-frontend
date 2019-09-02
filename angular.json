@@ -24,16 +24,16 @@
             ],
             "styles": [
               "src/styles.css",
-              "/home/vivek/InstaCar-Assignment-frontend/node_modules/font-awesome/css/font-awesome.min.css",
-              "/home/vivek/InstaCar-Assignment-frontend/node_modules/quill/dist/quill.bubble.css",
-              "/home/vivek/InstaCar-Assignment-frontend/node_modules/quill/dist/quill.snow.css",
-              "/home/vivek/InstaCar-Assignment-frontend/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "/home/ashish/InstaCar-Assignment-frontend/node_modules/font-awesome/css/font-awesome.min.css",
+              "/home/ashish/InstaCar-Assignment-frontend/node_modules/quill/dist/quill.bubble.css",
+              "/home/ashish/InstaCar-Assignment-frontend/node_modules/quill/dist/quill.snow.css",
+              "/home/ashish/InstaCar-Assignment-frontend/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": [
-              "/home/vivek/InstaCar-Assignment-frontend/node_modules/jquery/dist/jquery.min.js",
-              "/home/vivek/InstaCar-Assignment-frontend/node_modules/popper.js/dist/umd/popper.js",
-              "/home/vivek/InstaCar-Assignment-frontend/node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "/home/ashish/InstaCar-Assignment-frontend/node_modules/jquery/dist/jquery.min.js",
+              "/home/ashish/InstaCar-Assignment-frontend/node_modules/popper.js/dist/umd/popper.js",
+              "/home/ashish/InstaCar-Assignment-frontend/node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
