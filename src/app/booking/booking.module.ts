@@ -45,6 +45,7 @@ import {MatAutocompleteModule,
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule} from '@angular/material';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   imports: [
@@ -91,16 +92,15 @@ import {MatAutocompleteModule,
 
     ToastrModule.forRoot(),
     RouterModule.forChild([
-      {path:'booking-dashboard', component: BookingDashboardComponent},
-      //{path:'loggedin/userDashboard', component: UserDashboardComponent, canActivate:[RouteGaurdService]},
-    
+      //{path:'booking-dashboard', component: BookingDashboardComponent},
+      {path:'userDetails', component: UserDetailsComponent},
       {path:'driver-view', component: DriverViewComponent},
       {path:'car-view', component: CarViewComponent},
       {path:'payment-View', component: PaymentViewComponent},
       
     ])
   ],
-  declarations: [BookingDashboardComponent, DriverViewComponent, CarViewComponent, PaymentViewComponent],
+  declarations: [BookingDashboardComponent, DriverViewComponent, CarViewComponent, PaymentViewComponent, UserDetailsComponent],
 
   exports: [
     MatAutocompleteModule,

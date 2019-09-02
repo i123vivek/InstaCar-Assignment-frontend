@@ -1,64 +1,63 @@
-<div class="container-fluid">
-  <!-- Mobile-view -->
+<div class="container-fluid" style="background-color: rgb(173, 169, 169)">
+  <!-- Non-Mobile-view -->
   <div class=" ">
     <div class="col-sm-12 p-0">
-      <nav class="navbar navbar-expand-md navbar-fixed navbar-dark " style="background-color:rgb(5, 5, 128);">
+      <nav class="navbar  navbar-fixed navbar-dark " style="background-color:rgb(5, 5, 128);">
         <a class="navbar-brand" style="font-size:1.5em; color: white" [routerLink]="['/booking-dashboard']">INSTACAR
         </a>
+
+        <a class="nav-link mr-sm-2" style="font-size:1em; color: white" (click)="goToSignIn()">Sign-In</a>
+
       </nav>
-      <div class='row '>
+      <div class='row ' >
         <div class='col-12'>
-          <mat-tab-group mat-align-tabs="center" animationDuration="1000ms" >
-            <mat-tab label="ROUND TRIP" > 
-               <div class="col-12 d-flex justify-content-center">
+          <mat-tab-group mat-align-tabs="center" animationDuration="1000ms">
+            <mat-tab label="ROUND TRIP">
+              <div class="col-12 d-flex justify-content-center">
                 <mat-form-field appearance="outline" class="mr-2 ml-2 ">
-                  <mat-label style="color:blue">FROM</mat-label>
-                  <input matInput placeholder="Select Origin">
-                  <mat-select required>
+                  <mat-label  style="color:blue">FROM</mat-label>
+                  <!-- <input matInput [(ngModel)]="originAddress" name="originAddress" placeholder="Select Origin"   required > -->
+                  <mat-select [(ngModel)]="originAddress" name="originAddress" placeholder="Select Origin" required>
                     <mat-option>Select City</mat-option>
-                    <mat-option value="option">Bengaluru</mat-option>
-                    <!-- <mat-option value="option">Hyderabad</mat-option>
-                    <mat-option value="option">Mumbai</mat-option>
-                    <mat-option value="option">Kerala</mat-option> -->
-                  </mat-select>
-                </mat-form-field>
-              
-              
-                <mat-form-field appearance="outline" class="mr-2 ml-2">
-                  <mat-label style="color:blue">To</mat-label>
-                  <input matInput placeholder="Select Destination">
-                  <mat-select required>
-                    <mat-option>Select City</mat-option>
-                    <!-- <mat-option value="option">Bengaluru</mat-option> -->
-                    <mat-option value="option">Hyderabad</mat-option>
-                    <mat-option value="option">Mumbai</mat-option>
-                    <mat-option value="option">Kerala</mat-option>
+                    <mat-option value="Bengaluru">Bengaluru</mat-option>
                   </mat-select>
                 </mat-form-field>
 
-                
-              
+
+                <mat-form-field appearance="outline" class="mr-2 ml-2">
+                  <mat-label style="color:blue">To</mat-label>
+                  <!-- <input matInput placeholder="Select Destination"> -->
+                  <mat-select [(ngModel)]="destinationAddress" name="destinationAddress" placeholder="Select Destination" required>
+                    <mat-option>Select City</mat-option>
+                    <!-- <mat-option value="option">Bengaluru</mat-option> -->
+                    <mat-option value="Hyderabad">Hyderabad</mat-option>
+                    <mat-option value="Mumbai">Mumbai</mat-option>
+                    <mat-option value="Kerala">Kerala</mat-option>
+                  </mat-select>
+                </mat-form-field>
+
               </div>
 
               <div class="col-12 d-flex justify-content-center">
                 <mat-form-field appearance="outline" class="mr-2 ml-2 ">
                   <mat-label style="color:blue">Departure Date</mat-label>
-                  <input matInput placeholder="Departure Date" type="date">
-                  
-                </mat-form-field>
-              
-              
-                <mat-form-field appearance="outline" class="mr-2 ml-2">
-                  <mat-label style="color:blue">Arrival Date</mat-label>
-                  <input matInput placeholder="Arrival Date" type="date">
-                 
+                  <input matInput [(ngModel)]="departureDate" name="departureDate" placeholder="Departure Date" type="date">
+
                 </mat-form-field>
 
-                
-              
+                <mat-form-field appearance="outline" class="mr-2 ml-2">
+                  <mat-label style="color:blue">Arrival Date</mat-label>
+                  <input matInput [(ngModel)]="returnDate" name="returnDate" placeholder="Arrival Date" type="date">
+
+                </mat-form-field>
+
               </div>
+              <div class="col-12 d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" (click)="saveBookingData()">Book</button>
+              </div>
+             
             </mat-tab>
-            <mat-tab label="MULTICITY"> Content 2 </mat-tab>
+            <mat-tab label="MULTICITY"> To Be Done Later </mat-tab>
           </mat-tab-group>
         </div>
       </div>

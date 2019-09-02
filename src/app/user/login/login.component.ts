@@ -58,7 +58,12 @@ export class LoginComponent implements OnInit {
           this.AppService.setUserInfoInLocalStorage(apiResponse.data.userDetails);
 
           console.log("The set user info :",apiResponse.data.userDetails);
-          this.router.navigate(['/booking-dashboard']);
+          //this.router.navigate(['/booking-dashboard']);
+          if(Cookie.get('loginFlag') === 'true' && Cookie.get('bookingFlag') === 'true'){
+            this.router.navigate(['/userDetails']);
+          } else{
+            this.router.navigate(['/booking-dashboard']);
+          }
         }
         else {
           this.Toastr.errorToastr(apiResponse.message)

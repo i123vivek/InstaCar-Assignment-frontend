@@ -25,7 +25,7 @@ export class SignupComponent implements OnInit {
   }
 
   public redirectToSignIn: any = () => {
-    this.router.navigate(['/']);
+    this.router.navigate(['/login']);
   }
 
   public signupFunction: any = () => {

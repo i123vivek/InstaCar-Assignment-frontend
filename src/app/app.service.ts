@@ -43,6 +43,11 @@ export class AppService {
     return this.http.post(`${this.url}/api/v1/users/login`, params);
   }
 
+  public getSingleUserInformation(userId): Observable<any> {
+  
+    return this.http.get(`${this.url}/api/v1/users/${userId}/details?authToken=${Cookie.get('authToken')}`);
+  }
+
   public logout(): Observable<any> {
     const params = new HttpParams()
       .set('authToken', Cookie.get('authToken'))

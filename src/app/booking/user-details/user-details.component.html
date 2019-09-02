@@ -1,0 +1,71 @@
+<div class="container-fluid" style="background-color: rgb(173, 169, 169)">
+  <div class=" ">
+    <div class="col-sm-12 p-0">
+      <nav class="navbar  navbar-fixed navbar-dark " style="background-color:rgb(5, 5, 128);">
+        <a class="navbar-brand" style="font-size:1.5em; color: white" [routerLink]="['/booking-dashboard']">INSTACAR
+        </a>
+
+        <a class="nav-link mr-sm-2" style="font-size:1em; color: white" (click)="goToSignIn()">Sign-In</a>
+      </nav>
+      <div class="row p-0 m-0">
+
+          <div class="col-sm"></div>
+        
+          <div class="col-sm ">
+        
+            <h5 class="form-userDetails-heading" style="color:black">If not signedIn please sign in to proceed further </h5>
+        
+            <br>
+        
+            <span style="color:black">FirstName: </span>
+        
+            <label for="inputFirstName" class="sr-only">FirstName</label>
+        
+            <input type="text" id="inputFirstName" class="form-control" [(ngModel)]="firstName" placeholder="FirstName" required
+              autofocus>
+        
+            <br>
+        
+            <span style="color: black">LastName: </span>
+        
+            <label for="inputLastName" class="sr-only">LastName</label>
+        
+            <input type="text" id="inputLastName" class="form-control" [(ngModel)]="lastName" placeholder="LastName" required>
+        
+            <br>
+        
+            <span style="color: black">mobileNumber: </span>
+        
+            <label for="inputMobile" class="sr-only">mobileNumber</label>
+        
+            <input type="number" id="inputMobile" class="form-control" [(ngModel)]="mobileNumber" placeholder="mobileNumber" required>
+        
+            <br>
+        
+            <span style="color: black">Email: </span>
+        
+            <label for="inputEmail" class="sr-only">Email address</label>
+        
+            <input type="email" id="inputEmail" class="form-control" [(ngModel)]="email" placeholder="Email address" required>
+        
+            <br>
+        
+            <span style="color: black">address: </span>
+        
+            <label for="inputAddress" class="sr-only">Address</label>
+        
+            <input type="address" id="inputAddress" class="form-control" [(ngModel)]="address" placeholder="address"
+              required>
+        
+            <br>
+        
+            <button class="btn btn-lg btn-primary btn-block" type="button" (click)="confirmUserDetailsFunction()">Proceed</button>
+        
+          </div>
+        
+          <div class="col-sm"></div>
+        
+        </div>
+    </div>
+  </div>
+</div>
