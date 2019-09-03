@@ -23,7 +23,7 @@ export class DriverViewComponent implements OnInit, OnDestroy {
     this.userInfo = this.AppService.getUserInfoFromLocalstorage();
     this.userEmail = Cookie.get('email')
     console.log("authToken" , this.authToken);
-    //this.checkStatus();
+    this.checkStatus();
   }
 
   public checkStatus: any = () => {

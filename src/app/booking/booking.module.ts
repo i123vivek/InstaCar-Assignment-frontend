@@ -95,7 +95,7 @@ import { RouteGaurdService } from './route-gaurd.service';
     RouterModule.forChild([
       //{path:'booking-dashboard', component: BookingDashboardComponent},
       {path:'userDetails', component: UserDetailsComponent },
-      {path:'driver-view', component: DriverViewComponent},
+      {path:'driver-view', component: DriverViewComponent, canActivate:[RouteGaurdService]},
       {path:'car-view', component: CarViewComponent, canActivate:[RouteGaurdService]},
       {path:'payment-View', component: PaymentViewComponent,canActivate:[RouteGaurdService]},
       
